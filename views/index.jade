@@ -1,0 +1,52 @@
+doctype html
+
+
+script(src='/jquery-2.1.3.min.js')
+script(src='/postChat.js')
+script(language='JavaScript').
+  function printStuff() {
+    console.log("Stuff");
+    console.log($)
+  }
+  var toPost = {message : "This is my message to you-ou-ou"};
+
+html
+  head
+    title my jade template
+  body
+    h1 Forum #{forumName}
+    br
+    input(type='text', name='messageToPost', value='Steven Glansberg')
+    br
+    table
+      thead
+        tr: th POSTS
+      tbody
+        tr
+          td
+            | hello
+          td
+            | another thing
+          td
+            button(class="btn", name="cars" data-action="bea", onClick='switchPage(this.name)').
+              Cars!
+          td
+            button(class="btn", name="batman" data-action="bea", onClick='switchPage(this.name)').
+              Batman!
+
+        tr
+          td
+            | goodbye
+    table(border='1' width='100%')
+      thead
+        tr: th ITERATE
+      tbody
+        each guy, i in arrayValues
+          tr
+            td
+              | #{guy}
+    br
+    br
+    br
+    button(class="btn", data-action="bea", id='#{forumName}', onClick='postForm(this.id)').
+      Enter Chat
