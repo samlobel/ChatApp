@@ -1,0 +1,27 @@
+{
+  "name": "ChatApp",
+  "version": "1.0.0",
+  "description": "Start it up using \"node server.js\". Then, go to **http://localhost:3000/allMessages/ANYTHING**. That's the forum at page ANYTHING. Clicking the \"Enter Chat\" button submits your code to the database under whatever tab you're on, and should refresh the page so you see your input pop up. Clicking either of the two buttons (batman or cars) brings you to those respective tabs. Storage is persistant.",
+  "main": "routes.js",
+  "dependencies": {
+    "body-parser": "^1.12.2",
+    "express": "^4.12.3",
+    "jade": "^1.9.2",
+    "mongoose": "^4.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samlobel/ChatApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samlobel/ChatApp/issues"
+  },
+  "homepage": "https://github.com/samlobel/ChatApp"
+}
